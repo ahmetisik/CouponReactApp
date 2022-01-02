@@ -1,0 +1,86 @@
+.container{
+    margin: 0px 70px;
+    align-content: flex-start;
+}
+
+.container h2, p{
+    color: white;
+}
+
+.container p {
+    font-size: large;
+    font-weight: 500;
+}
+
+ul {
+    padding: 0;
+    list-style-type:none;
+}
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.coupon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.activeCoupon {
+    margin: 0px 250px 30px 250px;
+    padding: 10px;
+    background: rgb(34,193,195);
+    background: linear-gradient(315deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.activeCoupon:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+.inactiveCoupon {
+    margin: 0px 250px 30px 250px;
+    padding: 10px;
+    background: radial-gradient(circle, rgb(236, 138, 181) 0%, rgb(98, 161, 233) 100%);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.inactiveCoupon:hover {
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+.inactiveCoupon .dateText{
+    text-decoration: line-through;
+}
+
+.leftSideCoupon {
+    flex: 7;
+}
+
+.rightSideCoupon {
+    flex: 3;
+}
+
+.vertical {
+    border-left: 5px dotted white;
+    height: 195px;
+    position: relative;
+    left: 70%;
+}
+
+@media screen and (max-width: 1400px) {
+    .activeCoupon, .inactiveCoupon {
+        margin: 0px 100px 30px 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .activeCoupon, .inactiveCoupon {
+        margin: 0px 50px 30px 50px;
+    }
+}
